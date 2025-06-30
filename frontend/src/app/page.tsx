@@ -5,7 +5,7 @@ export default function Home() {
     <section className="flex flex-col items-center justify-center min-h-[70vh] py-12 px-2 text-center gap-8">
       <div>
         <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-primary">
-          Hi, I&apos;m <span className="text-accent" style={{ color: '#ededed', fontFamily: 'Arial, sans-serif' }}>Your Giridharan</span>
+          Hi, I&apos;m <span className="text-accent" style={{ color: '#ededed' }}>Giridharan</span>
         </h1>
         <p className="text-lg max-w-2xl mx-auto text-foreground/85">
           I build modern, user-centric web applications with exceptional quality, accessibility, and design. 
