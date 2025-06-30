@@ -1,0 +1,379 @@
+
+> nextjs@0.1.0 dev
+> next dev -p 3000 -H 0.0.0.0
+
+   ▲ Next.js 15.2.3
+   - Local:        http://localhost:3000
+   - Network:      http://0.0.0.0:3000
+
+ ✓ Starting...
+ ✓ Ready in 1551ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.7s (773 modules)
+ GET / 200 in 6080ms
+ GET / 200 in 42ms
+ ⚠ Blocked cross-origin request from vscode-internal-8766-beta.beta01.cloud.kavia.ai. To allow this, configure "allowedDevOrigins" in next.config
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 49ms
+ ✓ Compiled /favicon.ico in 364ms (444 modules)
+ GET /favicon.ico 200 in 686ms
+ GET /favicon.ico 200 in 218ms
+ ✓ Compiled /projects in 350ms (773 modules)
+ GET /projects 200 in 545ms
+ ✓ Compiled /contact in 307ms (761 modules)
+ GET /contact 200 in 478ms
+ GET / 200 in 52ms
+ GET /favicon.ico 200 in 222ms
+ GET / 200 in 81ms
+ ✓ Compiled /about in 332ms (777 modules)
+ GET /about 200 in 432ms
+ GET / 200 in 23ms
+ GET /favicon.ico 200 in 217ms
+ GET / 200 in 44ms
+ GET /favicon.ico 200 in 210ms
+ GET /about 200 in 53ms
+ GET /favicon.ico 200 in 208ms
+ GET /projects 200 in 72ms
+ GET /favicon.ico 200 in 222ms
+ GET /contact 200 in 48ms
+ GET /favicon.ico 200 in 209ms
+ GET / 200 in 12ms
+ GET /contact 200 in 90ms
+ GET /favicon.ico 200 in 209ms
+ GET / 200 in 13ms
+ ✓ Compiled in 691ms (777 modules)
+ GET / 200 in 131ms
+ GET /about 200 in 131ms
+ GET / 200 in 18ms
+ GET /about 200 in 20ms
+ ✓ Compiled in 818ms (759 modules)
+ GET / 200 in 136ms
+ GET /about 200 in 138ms
+ GET /about 200 in 15ms
+ ✓ Compiled in 210ms (759 modules)
+ GET /about 200 in 122ms
+ GET / 200 in 120ms
+ GET /about 200 in 15ms
+ ✓ Compiled /_not-found in 267ms (749 modules)
+ GET /_next/static/css/app/layout.css?v=1751260661908 404 in 394ms
+ GET /_next/static/css/app/layout.css?v=1751260662309 404 in 71ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/app-paths-manifest.json'] {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/app-paths-manifest.json'
+}
+ ○ Compiling /_error ...
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled /_error in 2.3s (1092 modules)
+ ✓ Compiled in 1ms (520 modules)
+ ✓ Compiled in 1ms (520 modules)
+ ⨯ Error: Cannot find module './447.js'
+Require stack:
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/webpack-runtime.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/app/about/page.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/require.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/load-components.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/utils.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/options.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/index.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/next.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/lib/start-server.js
+    at __webpack_require__.f.require (.next/server/webpack-runtime.js:198:28)
+    at <unknown> (.next/server/webpack-runtime.js:111:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:162:22)
+    at <unknown> (.next/server/app/about/page.js:1:10262)
+    at Object.<anonymous> (.next/server/app/about/page.js:1:10310) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/about'
+}
+ ✓ Compiled in 1561ms (1092 modules)
+ ⨯ Error: Cannot find module './447.js'
+Require stack:
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/webpack-runtime.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/pages/_document.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/require.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/load-components.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/utils.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/options.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/index.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/next.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/lib/start-server.js
+    at __webpack_require__.f.require (.next/server/webpack-runtime.js:198:28)
+    at <unknown> (.next/server/webpack-runtime.js:111:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:162:22)
+    at <unknown> (.next/server/app/page.js:1:10276)
+    at Object.<anonymous> (.next/server/app/page.js:1:10324) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ GET /about 500 in 2372ms
+ GET / 500 in 2693ms
+ ⨯ Error: Cannot find module './447.js'
+Require stack:
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/webpack-runtime.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/pages/_document.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/require.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/load-components.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/utils.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/options.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/index.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/next.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/lib/start-server.js
+    at __webpack_require__.f.require (.next/server/webpack-runtime.js:198:28)
+    at <unknown> (.next/server/webpack-runtime.js:111:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:162:22)
+    at <unknown> (.next/server/app/about/page.js:1:10262)
+    at Object.<anonymous> (.next/server/app/about/page.js:1:10310) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/about'
+}
+ GET /about 500 in 285ms
+ ⨯ Error: Cannot find module './447.js'
+Require stack:
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/webpack-runtime.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/pages/_document.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/require.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/load-components.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/utils.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/options.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/index.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/next.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/lib/start-server.js
+    at __webpack_require__.f.require (.next/server/webpack-runtime.js:198:28)
+    at <unknown> (.next/server/webpack-runtime.js:111:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:162:22)
+    at <unknown> (.next/server/app/about/page.js:1:10262)
+    at Object.<anonymous> (.next/server/app/about/page.js:1:10310) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/about'
+}
+ GET /about 500 in 248ms
+ ⨯ Error: Cannot find module './447.js'
+Require stack:
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/webpack-runtime.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/pages/_document.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/require.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/load-components.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/utils.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/options.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/index.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/next.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/lib/start-server.js
+    at __webpack_require__.f.require (.next/server/webpack-runtime.js:198:28)
+    at <unknown> (.next/server/webpack-runtime.js:111:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:162:22)
+    at <unknown> (.next/server/app/about/page.js:1:10262)
+    at Object.<anonymous> (.next/server/app/about/page.js:1:10310) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/about'
+}
+ GET /about 500 in 250ms
+ ⨯ Error: Cannot find module './447.js'
+Require stack:
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/webpack-runtime.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/pages/_document.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/require.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/load-components.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/utils.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/options.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/index.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/next.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/lib/start-server.js
+    at __webpack_require__.f.require (.next/server/webpack-runtime.js:198:28)
+    at <unknown> (.next/server/webpack-runtime.js:111:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:162:22)
+    at <unknown> (.next/server/app/about/page.js:1:10262)
+    at Object.<anonymous> (.next/server/app/about/page.js:1:10310) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/about'
+}
+ GET /about 500 in 251ms
+ ⨯ Error: Cannot find module './447.js'
+Require stack:
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/webpack-runtime.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/pages/_document.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/require.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/load-components.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/utils.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/options.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/index.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/next.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/lib/start-server.js
+    at __webpack_require__.f.require (.next/server/webpack-runtime.js:198:28)
+    at <unknown> (.next/server/webpack-runtime.js:111:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:162:22)
+    at <unknown> (.next/server/app/about/page.js:1:10262)
+    at Object.<anonymous> (.next/server/app/about/page.js:1:10310) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/about'
+}
+ GET /about 500 in 259ms
+ ⨯ Error: Cannot find module './447.js'
+Require stack:
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/webpack-runtime.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/pages/_document.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/require.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/load-components.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/utils.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/options.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/index.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/next.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/lib/start-server.js
+    at __webpack_require__.f.require (.next/server/webpack-runtime.js:198:28)
+    at <unknown> (.next/server/webpack-runtime.js:111:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:162:22)
+    at <unknown> (.next/server/app/about/page.js:1:10262)
+    at Object.<anonymous> (.next/server/app/about/page.js:1:10310) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/about'
+}
+ GET /about 500 in 266ms
+ ⨯ Error: Cannot find module './447.js'
+Require stack:
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/webpack-runtime.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/pages/_document.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/require.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/load-components.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/utils.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/options.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/index.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/next.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/lib/start-server.js
+    at __webpack_require__.f.require (.next/server/webpack-runtime.js:198:28)
+    at <unknown> (.next/server/webpack-runtime.js:111:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:162:22)
+    at <unknown> (.next/server/app/about/page.js:1:10262)
+    at Object.<anonymous> (.next/server/app/about/page.js:1:10310) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/about'
+}
+ ⨯ Error: Cannot find module './447.js'
+Require stack:
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/webpack-runtime.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/pages/_document.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/require.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/load-components.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/utils.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/options.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/index.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/next.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/lib/start-server.js
+    at __webpack_require__.f.require (.next/server/webpack-runtime.js:198:28)
+    at <unknown> (.next/server/webpack-runtime.js:111:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:162:22)
+    at <unknown> (.next/server/app/about/page.js:1:10262)
+    at Object.<anonymous> (.next/server/app/about/page.js:1:10310) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/about'
+}
+ GET /about 500 in 288ms
+ GET /about 500 in 288ms
+ ⨯ Error: Cannot find module './447.js'
+Require stack:
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/webpack-runtime.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/.next/server/pages/_document.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/require.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/load-components.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/utils.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/options.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/swc/index.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/config.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/next.js
+- /home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/node_modules/next/dist/server/lib/start-server.js
+    at __webpack_require__.f.require (.next/server/webpack-runtime.js:198:28)
+    at <unknown> (.next/server/webpack-runtime.js:111:40)
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (.next/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:162:22)
+    at <unknown> (.next/server/app/about/page.js:1:10262)
+    at Object.<anonymous> (.next/server/app/about/page.js:1:10310) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/about'
+}
+ GET /about 500 in 257ms
+ ⨯ next-app-loader?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.tsx&appDir=%2Fhome%2Fkavia%2Fworkspace%2Fcode-generation%2Fdarklight-portfolio-95602-5e967b3d%2Ffrontend%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fhome%2Fkavia%2Fworkspace%2Fcode-generation%2Fdarklight-portfolio-95602-5e967b3d%2Ffrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!:20
+Error: Image import "next-metadata-image-loader?type=favicon&segment=&basePath=&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js!/home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/src/app/favicon.ico?__next_metadata__" is not a valid image file. The image may be corrupted or an unsupported format.
+ GET / 500 in 11ms
+ GET /about 500 in 11ms
+ ⨯ next-app-loader?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.tsx&appDir=%2Fhome%2Fkavia%2Fworkspace%2Fcode-generation%2Fdarklight-portfolio-95602-5e967b3d%2Ffrontend%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fhome%2Fkavia%2Fworkspace%2Fcode-generation%2Fdarklight-portfolio-95602-5e967b3d%2Ffrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!:20
+Error: Image import "next-metadata-image-loader?type=favicon&segment=&basePath=&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js!/home/kavia/workspace/code-generation/darklight-portfolio-95602-5e967b3d/frontend/src/app/favicon.ico?__next_metadata__" is not a valid image file. The image may be corrupted or an unsupported format.
+ GET /_next/static/webpack/031731aa95cb1ffd.webpack.hot-update.json 500 in 5ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 500 in 52ms
+ GET / 500 in 13ms
+ GET /about 500 in 14ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 14ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 12ms
+ GET /_next/static/chunks/fallback/main.js 500 in 12ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 16ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 17ms
+ GET /_next/static/chunks/fallback/webpack.js 500 in 11ms
+ GET /_next/static/chunks/fallback/react-refresh.js 500 in 10ms
+ GET /_next/static/chunks/fallback/main.js 500 in 11ms
+ GET /_next/static/chunks/fallback/pages/_app.js 500 in 11ms
+ GET /_next/static/chunks/fallback/pages/_error.js 500 in 10ms
+ ✓ Compiled in 939ms (1070 modules)

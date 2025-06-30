@@ -1,32 +1,23 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 
-// PUBLIC_INTERFACE
+/**
+ * PUBLIC_INTERFACE
+ * ThemeToggle component provides light/dark/auto theme switching.
+ * It manages theme persistence via localStorage and updates the root <html> element and Tailwind dark mode classes.
+ */
 export function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark" | "auto">("auto");
 
-  useEffect(() => {
-    // Load theme from localStorage, fallback to auto
-    const stored = window.localStorage.getItem("theme");
-    if (
-      stored === "light" ||
-      stored === "dark" ||
-      stored === "auto"
-    ) {
-      setTheme(stored);
-      applyTheme(stored);
-    } else {
-      setTheme("auto");
-      applyTheme("auto");
-    }
-  }, []);
-
-  function applyTheme(next: "light" | "dark" | "auto") {
-    // Remove any set theme classes and data-theme attr
+  // Handler that applies the appropriate classes and attributes
+  const applyTheme = useCallback((next: "light" | "dark" | "auto") => {
     const html = document.documentElement;
-    html.classList.remove("dark", "light");
+
+    // Remove all possible theme-related classes
+    html.classList.remove("light", "dark");
     html.removeAttribute("data-theme");
+
     if (next === "light") {
       html.classList.add("light");
       html.setAttribute("data-theme", "light");
@@ -34,19 +25,47 @@ export function ThemeToggle() {
       html.classList.add("dark");
       html.setAttribute("data-theme", "dark");
     } else {
+      // Auto: follow system, explicit "auto" attribute for debug/tailwind
       html.setAttribute("data-theme", "auto");
-      // listen for OS changes
-      if (window.matchMedia) {
-        const m = window.matchMedia("(prefers-color-scheme: dark)");
-        if (m.matches) {
-          html.classList.add("dark");
-        } else {
-          html.classList.remove("dark");
-        }
+      // Remove both to rely on prefers-color-scheme for Tailwind auto mode support
+      if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        html.classList.add("dark");
+      } else {
+        html.classList.remove("dark");
       }
     }
-  }
+  }, []);
 
+  // Effect: on mount, restore persisted theme OR system-preferred theme
+  useEffect(() => {
+    const stored = window.localStorage.getItem("theme");
+    let restored: "light" | "dark" | "auto" = "auto";
+    if (stored === "light" || stored === "dark" || stored === "auto") {
+      restored = stored;
+    }
+    setTheme(restored);
+    applyTheme(restored);
+
+    // For "auto" mode: watch for system color scheme changes
+    let m: MediaQueryList | null = null;
+    const osChange = () => {
+      if (window.localStorage.getItem("theme") === "auto") {
+        applyTheme("auto");
+      }
+    };
+    if (window.matchMedia) {
+      m = window.matchMedia("(prefers-color-scheme: dark)");
+      m.addEventListener("change", osChange);
+    }
+    return () => {
+      // Clean up event listener
+      if (m) {
+        m.removeEventListener("change", osChange);
+      }
+    };
+  }, [applyTheme]);
+
+  // Function: when user explicitly changes theme
   function handleChange(next: "light" | "dark" | "auto") {
     setTheme(next);
     window.localStorage.setItem("theme", next);
@@ -62,10 +81,11 @@ export function ThemeToggle() {
           theme === "light" ? "text-accent" : ""
         }`}
         onClick={() => handleChange("light")}
+        type="button"
       >
         {/* sun icon */}
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-          <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth="2"/>
+          <circle cx="12" cy="12" r="5" stroke="currentColor" strokeWidth="2" />
           <g stroke="currentColor" strokeWidth="2">
             <line x1="12" y1="2" x2="12" y2="4" />
             <line x1="12" y1="20" x2="12" y2="22" />
@@ -85,6 +105,7 @@ export function ThemeToggle() {
           theme === "dark" ? "text-accent" : ""
         }`}
         onClick={() => handleChange("dark")}
+        type="button"
       >
         {/* moon icon */}
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -102,6 +123,7 @@ export function ThemeToggle() {
           theme === "auto" ? "text-accent" : ""
         }`}
         onClick={() => handleChange("auto")}
+        type="button"
       >
         {/* auto icon (circle with half moon) */}
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
